@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .name_template {
+            margin: 25px;
+        }
+        .insert_file {
+            padding-right: 1000px;
+            padding-left: 20px;
+            margin: 0 auto;
+        }
+        .button_group {
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Cifar</title>
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <div class="name_template">
+                <h1>Загрузи картинку</h1>
+            </div>
+            <div class="insert_file">
+                <div class="form-group">
+                    <form action="/uploader" method="POST"
+                          enctype="multipart/form-data">
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                                 <input type = "file"  class="custom-file-input" name = "file" />
+                                <label class="custom-file-label" for="inputGroupFile02">Выбрать файл</label>
+                            </div>
+                        </div>
+                        <div class = "button_group">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Определить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
